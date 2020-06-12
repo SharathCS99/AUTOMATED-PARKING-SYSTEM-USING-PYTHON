@@ -1,0 +1,49 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<center>
+	<h1>RECOGNITION</h1></center>
+</head>
+{% if messages %}
+{% for message in messages %}
+<h4>*{{message}}*</h4>
+{% endfor %}
+{% endif %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+	{% if var is not '' %}
+	<center>
+		<h1>
+	The Plate number is:{{var}}
+	<br>
+	<br>
+	The Time is:{{time}}
+	<br>
+	<br>
+</h1>
+</center>
+{% endif %}
+<form action="cloudop">
+	<h4>
+	{% if val is '' %}
+	Enter The Number When Not Recognised: <input type='text' name='id' >
+	<br>
+  </h4>
+  <br
+  <br>
+  {% endif %}
+	<h4>
+	<button type="submit">submit</button>
+</h4>
+</form>
+</center>
+{% endblock %}
+</html>

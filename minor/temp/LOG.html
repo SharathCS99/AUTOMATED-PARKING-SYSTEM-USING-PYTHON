@@ -1,0 +1,39 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<center>
+	<h1>WELCOME TO LOGIN PAGE</h1>
+</center>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% for message in messages %}
+<h4>*{{message}}*</h4>
+{% endfor %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+	<form action="actuallo">
+		<h4>
+		Enter The Id:<input type='text' name='id1'>
+		<br>
+		<br>
+		<br>
+		Enter The Password:<input type='password' name='pass1'>
+		<br>
+		<br>
+		<br>
+	</h4>
+		<button type='submit'>SUBMIT</button>
+	</form></center>
+{% endblock %}
+</html>

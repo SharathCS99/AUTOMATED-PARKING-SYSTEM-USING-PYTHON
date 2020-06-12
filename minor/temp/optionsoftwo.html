@@ -1,0 +1,39 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<center>
+<h1>WELCOME TO AUTOBOT</h1>
+</center>
+<body>
+	<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+{% for message in messages %}
+<h4>*{{message}}*</h4>
+{% endfor %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+	<form action="entry1">
+		<button type='submit'>ENTRY</button>
+	</form></center>
+<center>
+	<form action="exit">
+		<button type='submit'>EXIT</button>
+	</form></center>
+<center>
+</form></center>
+</body>
+{% endblock %}
+</html>

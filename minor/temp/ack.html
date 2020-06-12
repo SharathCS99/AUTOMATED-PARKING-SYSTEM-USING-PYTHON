@@ -1,0 +1,26 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<body>
+	<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<center>
+	{% for message in messages %}
+	<br>
+		<br>
+			<br>
+		<br>
+			<br>
+				<br>
+					<br>
+						<br
+							<br>
+							
+	<h1>*{{message}}*</h1>
+	{% endfor %}
+</center>
+</body>
+{% endblock %}
+</html>

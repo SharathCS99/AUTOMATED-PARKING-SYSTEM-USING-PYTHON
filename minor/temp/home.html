@@ -1,0 +1,54 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<center>
+	<h1>WELCOME TO THE REGISTER PAGE</h1></center>
+</head>
+{% if messages %}
+{% for message in messages %}
+<h4>*{{message}}*</h4>
+{% endfor %}
+{% endif %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<form action="entry">
+	<h4>
+	Enter The Id: <input type='text' name='id'>
+	<br>
+  <br
+  <br>
+  <br>
+	Password: <input type='password' name='pass'>
+	<br>
+	<br>
+  <br>
+  <br>
+  Password Again: <input type='password' name='pass2'>
+	<br>
+	<br>
+  <br>
+  <br>
+  Enter The Price For One Minute: <input type='text' name='slot'>
+	<br>
+  <br>
+	<br>
+  <br>
+  Enter The Number Of Available Slots: <input type='text' name='slotp'>
+  <br>
+  <br>
+  <br>
+  <br>
+	<button type="submit">submit</button>
+</h4>
+</form>
+</center>
+{% endblock %}
+</html>
